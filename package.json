@@ -1,0 +1,33 @@
+{
+  "name": "miranda-ui",
+  "version": "2.0.0",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.4",
+    "@storybook/web-components": "^8.6.4",
+    "@storybook/web-components-vite": "^8.6.4",
+    "rollup": "^4.35.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.1"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    },
+    "./Button": {
+      "import": "./dist/Button.mjs"
+    }
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}
