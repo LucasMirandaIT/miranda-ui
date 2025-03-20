@@ -1,6 +1,6 @@
 {
   "name": "miranda-ui",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "dist/index.umd.js",
   "module": "dist/index.mjs",
   "license": "MIT",
@@ -16,6 +16,7 @@
     "@storybook/web-components": "^8.6.4",
     "@storybook/web-components-vite": "^8.6.4",
     "rollup": "^4.35.0",
+    "sass": "^1.85.1",
     "typescript": "^5.8.2",
     "vite": "^6.2.1"
   },

@@ -1,0 +1,33 @@
+@mixin dark {
+    :host {
+        --color-primary: #283b72;
+        --color-secondary: #77369b;
+
+        --color-success: #0a9426;
+        --color-warning: #d2a021;
+        --color-error: #9d1414;
+        --color-info: #155eb7;
+
+        --color-disabled: #4d4d4d;
+    }
+}
+
+@mixin light {
+    :host {
+        --color-primary: #3155c1;
+        --color-secondary: #77369b;
+
+        --color-success: #10d137;
+        --color-warning: #f0b521;
+        --color-error: #c51616;
+        --color-info: #2080f5;
+
+        --color-disabled: #7b7b7b;
+    }
+}
+
+@include light();
+
+@media (prefers-color-scheme: dark) {
+    @include dark();
+}
