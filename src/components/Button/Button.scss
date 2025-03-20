@@ -1,0 +1,142 @@
+@use '../../styles/colors.scss';
+@use '../../styles/spacings.scss';
+
+.m-button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+
+  &.loading,
+  &.disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &.filled {
+    border: none;
+
+    &.primary {
+      background-color: var(--color-primary);
+      color: #FFF;
+    }
+
+    &.secondary {
+      background-color: var(--color-secondary);
+      color: #FFF;
+    }
+
+    &.success {
+      background-color: var(--color-success);
+      color: #FFF;
+    }
+
+    &.info {
+      background-color: var(--color-info);
+      color: #FFF;
+    }
+
+    &.warning {
+      background-color: var(--color-warning);
+      color: #FFF;
+    }
+
+    &.error {
+      background-color: var(--color-error);
+      color: #FFF;
+    }
+
+    &.disabled {
+      background-color: var(--color-disabled);
+    }
+  }
+
+  &.outlined {
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+
+    &.primary {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+
+    &.secondary {
+      border-color: var(--color-secondary);
+      color: var(--color-secondary);
+    }
+
+    &.success {
+      border-color: var(--color-success);
+      color: var(--color-success);
+    }
+
+    &.warning {
+      border-color: var(--color-warning);
+      color: var(--color-warning);
+    }
+
+    &.info {
+      border-color: var(--color-info);
+      color: var(--color-info);
+    }
+
+    &.error {
+      border-color: var(--color-error);
+      color: var(--color-error);
+    }
+
+    &.disabled {
+      border-color: var(--color-disabled);
+      color: var(--color-disabled);
+    }
+  }
+
+  &.pill {
+    border-radius: 50px;
+  }
+
+  &.text {
+    background: transparent;
+    border: none;
+
+    &.primary {
+      color: var(--color-primary);
+    }
+
+    &.secondary {
+      color: var(--color-secondary);
+    }
+
+    &.success {
+      color: var(--color-success);
+    }
+
+    &.warning {
+      color: var(--color-warning);
+    }
+
+    &.info {
+      color: var(--color-info);
+    }
+
+    &.error {
+      color: var(--color-error);
+    }
+
+    &.disabled {
+      color: var(--color-disabled);
+    }
+  }
+
+  &:focus {
+    outline: 2px solid #ffcc00;
+  }
+
+  .prefix {
+    margin-right: var(--spacing-sm);
+  }
+
+  .suffix {
+    margin-left: var(--spacing-sm);
+  }
+}
